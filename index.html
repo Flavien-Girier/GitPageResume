@@ -1,3 +1,4 @@
+<!-- TOUT FAIRE AUSSI EN AGLAIS AVEC TUILE QUI TOURNE, ou autre-->
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,33 +16,86 @@
 </head>
 
 <body>
+<header>
+    <div class="frame">
+        <div class="box">
+            <div class="main">
 
-<div class="frame">
-    <div class="box">
-        <div class="main">
+                <div class="image">
+                    <div class="circle1"></div>
+                    <div class="circle2"></div>
+                    <img src="/images/profil_picture.jpg" alt="profil_picture" id="my-picture">
+                </div>
 
-            <div class="image">
-                <div class="circle1"></div>
-                <div class="circle2"></div>
-                <img src="/images/profil_picture.jpg" alt="profil_picture">
+                <h1>Girier Flavien</h1>
+                <h2 id="title">Developpeur PHP Junior</h2>
+
+                <!-- CONTACT MODAL	 -->
+                <button type="button" class="fadeInUpBig btn btn-dark contact" data-toggle="modal"
+                        data-target="#contactModal">
+                    Contact
+                </button>
+                <!-- Modal Contact -->
+                <div class="modal fade" id="contactModal" tabindex="-1" role="dialog"
+                     aria-labelledby="contactModalLabel"
+                     aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Mes coordonnées</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="hiddenContainer">
+                                    <div>
+                                        <a href="mailto:girier.flavien@gmail.com" target="_blank">girier.flavien@gmail.com</a>
+                                    </div>
+                                    <div>06.46.33.61.21</div>
+                                    <div>3e Arrodissement de Lyon</div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary modal-close" data-dismiss="modal">Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
-            <h1>Girier Flavien</h1>
-            <p>Developpeur PHP Junior</p>
-
-            <!-- CONTACT MODAL	 -->
-            <button type="button" class="animated fadeInUpBig btn btn-dark" data-toggle="modal" data-target="#contactModal">
-                Contact
-            </button>
+            <div class="social">
+                <div class="container">
+                    <div class="row mx-auto">
+                        <div class="col-lg-1 offset-4">
+                            <a href="https://www.linkedin.com/in/flavien-girier-7a145b43/" target="_blank"><img
+                                    src="images/linkedin_logo.png" alt="linkedin_logo" class="icon"></a>
+                        </div>
+                        <div class="col-lg-1">
+                            <a href="http://www.viadeo.com/p/002264bqmcoeqp31" target="_blank"><img
+                                    src="images/viadeo_logo.png" alt="linkedin_logo"
+                                    class="icon"></a>
+                        </div>
+                        <div class="col-lg-1">
+                            <a href="https://twitter.com/Flavien_Girier" target="_blank"><img
+                                    src="images/twitter_logo.png"
+                                    alt="twitter_logo"
+                                    class="icon"></a>
+                        </div>
+                        <div class="col-lg-1">
+                            <a href="https://github.com/Flavien-Girier" target="_blank"><img
+                                    src="images/github_logo.png"
+                                    alt="github_logo" class="icon"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </div>
-
-        <div class="social">
-            <p>Posts</p>
-        </div>
-
     </div>
-</div>
+</header>
 
 <!-- start section About -->
 <section>
@@ -49,7 +103,7 @@
         <div class="container text-center">
             <div class="row">
                 <div class="col-sm-12 cover-text">
-                    <h1>About Me</h1>
+                    <h1>A propos de moi</h1>
                 </div>
                 <div>
                     <p>Diplômé en marketing, j’ai entrepris de poursuivre et de compléter mes compétences
@@ -60,7 +114,8 @@
                         atout qui me permet de comprendre rapidement les objectifs d’un client et d’optimiser
                         l’efficacité de mon travail.</p>
                     <p>J'ai pour objectif de devenir développeur PHP confirmé et éventuellement devenir
-                        lead dev d’ici quelques années. Sur le long terme, le statut de chef de projet ou Product owner pourrait m'intéresser.</p>
+                        lead dev d’ici quelques années. Sur le long terme, le statut de chef de projet ou Product owner
+                        pourrait m'intéresser.</p>
                 </div>
             </div>
 
@@ -68,6 +123,93 @@
     </div>
 </section>
 
+<!-- start section Skills -->
+<section class="skills">
+    <div class="container-fluid  home-cover">
+        <div class="row">
+            <div class="col-sm-12 cover-text">
+                <h1>Compétences</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="mx-auto card">
+        <div class="row mx-auto card-front">
+            <h2>Back-End</h2>
+        </div>
+        <div class="row mx-auto card-back">
+            PHP 7<br>
+            Symfony 3<br>
+            MySQL<br>
+        </div>
+    </div>
+    <div class="mx-auto card">
+        <div class="row mx-auto card-front">
+            <h2>Front-End</h2>
+        </div>
+        <div class="row mx-auto card-back">
+            HTML5<br>
+            CSS3<br>
+            Boostrap 3 & 4<br>
+            jQuery<br>
+            VueJS (en cours)<br>
+        </div>
+    </div>
+    <div class="mx-auto card">
+        <div class="row mx-auto card-front">
+            <h2>Outils</h2>
+        </div>
+        <div class="row mx-auto card-back">
+            LINUX Ubuntu <br>
+            PhpStorm <br>
+            Git / GitHub <br>
+            Méthode SCRUM <br>
+            Photoshop <br>
+        </div>
+    </div>
+    <div class="mx-auto card">
+        <div class="row mx-auto card-front">
+            <h2>Langue</h2>
+        </div>
+        <div class="row mx-auto card-back">
+            Francais - Langue Maternelle <br>
+            Anglais courant (TOEIC : 935)
+        </div>
+    </div>
+</section>
+
+<!-- start section Experiences -->
+<section class="experience">
+    <div class="container-fluid  home-cover">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-sm-12 cover-text">
+                    <h1>Expériences Développeur Web Junior</h1>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row mx-auto">
+                <p>Création d’un site internet, AMO-Concept <br>
+                    Equipe de 5 personnes <br>
+                    Onepage vitrine avec formulaire de contact, système de comptes utilisateurs et
+                    d’un back-office permettant l’upload par l’admin et le download de documents
+                    par les clients et les partenaires <br>
+                    Réalisation de Wireframes, développement du Front puis des fonctionnalités
+                    Back, échanges réguliers avec le client, organisation de sprint et partage des
+                    tâches <br> Réalisé avec Symfony 3.4 – Méthodologie agile SCRUM – Normes PSR - GitHub</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row mx-auto">
+                <p>
+                    Création d’un site fictif, Bug Cooker <br>
+                    Réalisation d’un site vitrine d’un restaurant de nourriture d’insectes <br>
+                    HTML/CSS - Boostrap - GitHub</p>
+            </div>
+        </div>
+    </div>
+</section>
 
 <!-- start section Formation -->
 <section>
@@ -83,9 +225,11 @@
             <div class="col-lg-12">
                 <div class="timeline">
                     <div class="timeline-entry">
-                        <div class="timeline-title">
+                        <div class="timeline-title text-center">
                             <h3>Wild Code School</h3><br>
                             <h3>2018</h3>
+                            <a href="https://wildcodeschool.fr/"><img src="/images/wcs_logo.png" alt="profil_picture"
+                                                                      class="w-50 mt-4"></a>
                         </div>
                         <div class="timeline-body">
                             <p>Formation Développement Web PHP / Symfony</p>
@@ -100,47 +244,57 @@
                 </div>
                 <div class="timeline">
                     <div class="timeline-entry">
-                        <div class="timeline-title">
+                        <div class="timeline-title text-center">
                             <h3>ESDES - Ecole de management</h3><br>
                             <h3>2012-2014</h3>
+                            <a href="http://www.esdes.fr/"><img src="/images/esdes_logo.png" alt="profil_picture"
+                                                                class="w-75 mt-4"></a>
                         </div>
                         <div class="timeline-body">
                             <p>Master Marketing / Communication / Vente</p>
                             <ul class="text-muted">
-                                <li>BlablaBlablaBlablaBlablaBlablaBlabla</li>
-                                <li>BlablaBlablaBlablaBlablaBlablaBlabla</li>
+                                <li>Marketing</li>
+                                <li>Communication</li>
+                                <li>Vente</li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div class="timeline">
                     <div class="timeline-entry">
-                        <div class="timeline-title">
+                        <div class="timeline-title text-center">
                             <h3>Université Claude Bernard Lyon 1</h3><br>
-                            <h3>Année en Erasmus dans l’université de Lappeenranta, Finlande</h3><br>
+                            <h6>Année en Erasmus dans l’université de Lappeenranta, Finlande</h6><br>
                             <h3>2011-2012</h3>
+                            <a href="https://www.univ-lyon1.fr/"><img src="/images/univ_logo.png" alt="profil_picture"
+                                                                      class="w-75 mt-4"></a>
                         </div>
                         <div class="timeline-body">
                             <p>Licence Droit, Economie, Gestion</p>
                             <ul class="text-muted">
-                                <li>BlablaBlablaBlablaBlablaBlablaBlabla</li>
-                                <li>BlablaBlablaBlablaBlablaBlablaBlabla</li>
+                                <li>Economie</li>
+                                <li>Marketing</li>
+                                <li>Commerce internationale</li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div class="timeline">
                     <div class="timeline-entry">
-                        <div class="timeline-title">
+                        <div class="timeline-title text-center">
                             <h3>Université Claude Bernard Lyon 1</h3><br>
                             <h3>2009-2011</h3>
+                            <a href="https://iut.univ-lyon1.fr/formation/offre-de-formations/gea-villeurbanne-doua-/gea-gestion-des-entreprises-et-des-administrations-villeurbanne-doua--790766.kjsp"><img
+                                    src="/images/univ_logo.png" alt="profil_picture" class="w-75 mt-4"></a>
                         </div>
                         <div class="timeline-body">
                             <p>Diplôme Universitaire de Technologie : Gestion des Entreprise et des Administrations
                                 (GEA)</p>
                             <ul class="text-muted">
-                                <li>BlablaBlablaBlablaBlablaBlablaBlabla</li>
-                                <li>BlablaBlablaBlablaBlablaBlablaBlabla</li>
+                                <li>Statistiques</li>
+                                <li>Macroéconomie / Microéconomie</li>
+                                <li>Comptabilité</li>
+                                <li>Communication</li>
                             </ul>
                         </div>
                     </div>
@@ -150,154 +304,81 @@
     </div>
 </section>
 
-<!-- start section Skills -->
-<section class="container skills">
-    <div class="row mx-auto">
-        <h1> Compétences</h1><br>
-    </div>
-    <div class="row mx-auto">
-        <div class="row mx-auto">
-            <h2>Back-End</h2>
-            PHP 7<br>
-            Symfony 3<br>
-            MySQL<br>
-        </div>
-
-        <div class="row mx-auto">
-            <h2>Front-End</h2>
-            HTML5<br>
-            CSS3<br>
-            Boostrap 3 & 4<br>
-            jQuery<br>
-            VueJS (en cours)<br>
-        </div>
-
-        <div class="row mx-auto">
-            <h2>Outils</h2>
-            LINUX Ubuntu <br>
-            PhpStorm <br>
-            Git / GitHub <br>
-            Méthode SCRUM <br>
-            Photoshop <br>
-        </div>
-
-        <div class="row mx-auto">
-            <h2>Langue</h2>
-            Anglais courant (TOEIC : 935) - Ajouter le diplome
-        </div>
-    </div>
-</section>
-
-<!-- start section Experiences -->
-<section class="container experience">
-    <div class="row mx-auto">
-        <h1>Expériences Développeur Web Junior</h1> <br>
-
-        Création d’un site internet, AMO-Concept
-        Equipe de 5 personnes
-        Onepage vitrine, système de comptes utilisateurs et d’un back-office
-        Réalisé avec Symfony 3.4 <br>
-        Création d’un site fictif, Bug Cooker
-        Réalisation d’un site vitrine d’un restaurant de nourriture d’insectes
-        HTML/CSS - Boostrap <br>
-
-        <h1>Autres expériences</h1> <br>
-        <div class="row mx-auto">
-            Assistant d’Exploitation chez SEVEA (2017)
-            Gestion de projet du nouveau concept magasins / Création de retro planning <br>
-        </div>
-
-        <div class="row mx-auto">
-            Conseiller Clientèle Particulier - Crédit Agricole (2016)
-            Accueil de la clientèle, prise de rendez-vous / Gestion des opérations courantes /
-            Entretiens services et épargne <br>
-        </div>
-
-        <div class="row mx-auto">
-            Assistant Chef de produit accessoires chez Subsonic (2014)
-            Gestion des gammes de produits et des E-boutiques <br>
-        </div>
-
-        <div class="row mx-auto">
-            Chargé Marketing et communication dans la start-up Carolei, la maison des pâtes <br>
-            fraîches, Québec (2011)
-            Réalisation du plan marketing et de supports de communication / Gestion des <br>
-        </div>
-    </div>
-</section>
-
-<section class="container contact">
-    <div class="row mx-auto">
-        Formulaire de contact <br>
-        Votre nom / Votre email / Sujet / Message <br>
-        Captcha
-    </div>
-
-    <div class="row mx-auto">
-        <input type="submit" value="Envoyer">
-    </div>
-
-</section>
-
-<section>
-    <div class="container">
-        <div class="row mx-auto">
-            Liens utiles : LinkedIn / Github / Twitter
-        </div>
-    </div>
-
-</section>
+<!-- start section Autres expériences -->
 <section>
     <div class="container-fluid  home-cover">
-        <div class="container text-center">
-            <div class="row">
-                <div class="col-sm-12 cover-text">
-                    <h1>About Me</h1>
-                </div>
-                <div class="cover-text">
-                    <p>Cinéma : Quentin Tarantino, Christopher Nolan, Alejandro Gonzalez Inarritu</p>
-                    <p>Musique : Flûte traversière, guitare basse</p>
-                    <p>Sports : Escalade, Soccer 5</p>
+        <div class="container-fluid  home-cover">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-sm-12 cover-text">
+                        <h1>Autres expériences</h1>
+                    </div>
                 </div>
             </div>
+            <div class="container text-center">
+                <div class="row mx-auto">
+                    <p>Assistant d’Exploitation chez SEVEA (2017)
+                        Gestion de projet du nouveau concept magasins / Création de retro planning</p>
+                </div>
 
+                <div class="row mx-auto">
+                    <p>Conseiller Clientèle Particulier - Crédit Agricole (2016)
+                        Accueil de la clientèle, prise de rendez-vous / Gestion des opérations courantes /
+                        Entretiens services et épargne</p>
+                </div>
+
+                <div class="row mx-auto">
+                    <p>Assistant Chef de produit accessoires chez Subsonic (2014)
+                        Gestion des gammes de produits et des E-boutiques</p>
+                </div>
+
+                <div class="row mx-auto">
+                    <p>Chargé Marketing et communication dans la start-up Carolei, la maison des pâtes
+                        fraîches, Québec (2011)
+                        Réalisation du plan marketing et de supports de communication / Gestion des </p>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
-
-<!-- Modal Contact -->
-<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel"
-     aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Mes coordonnées</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="hiddenContainer">
-                    <div>
-                        <a href="mailto:andy45386@gmail.com" target="_blank">
-                            <i class="fas fa-envelope"></i> girier.flavien@gmail.com</a></div>
+<!-- start section Loisirs -->
+<section>
+    <div class="container-fluid  home-cover">
+        <div class="container-fluid  home-cover">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-sm-12 cover-text">
+                        <h1>Loisirs</h1>
+                    </div>
+                </div>
+                <div class="container text-center">
+                    <div class="row mx-auto">
+                        <p>Cinéma : Quentin Tarantino, Christopher Nolan, Alejandro Gonzalez Inarritu.</p>
+                    </div>
+                    <div class="row mx-auto">
+                        <p>Musique : Flûte traversière, guitare basse</p>
+                    </div>
+                    <div class="row mx-auto">
+                        <p>Sports : Escalade, Soccer 5</p>
+                    </div>
                 </div>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary modal-close" data-dismiss="modal">Close</button>
+        </div>
+    </div>
+</section>
+
+<!-- Button Download resume -->
+<div class="container-fluid  home-cover">
+
+    <div class="container">
+        <div class="row">
+            <div class="btn-cv mx-auto">
+                <button type="button" class="btn-outline-cv"><a href="#">Télécharger mon CV</a></button>
             </div>
         </div>
     </div>
 </div>
-
-<!-- Button Download resume -->
-<div class="row">
-    <div class="btn-cv">
-        <button type="button" class="btn-outline-cv"><a href="#">Télécharger mon CV</a></button>
-    </div>
-</div>
-
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
