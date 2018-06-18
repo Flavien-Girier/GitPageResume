@@ -10,9 +10,8 @@
           integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
           integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    <link href="https://fastcdn.org/Animate.css/3.4.0/animate.min.css" rel="stylesheet">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
@@ -98,8 +97,8 @@
 </header>
 
 <!-- start section About -->
-<section>
-    <div class="container-fluid  home-cover">
+<section class="about">
+    <div class="container-fluid">
         <div class="container text-center">
             <div class="row">
                 <div class="col-sm-12 cover-text">
@@ -125,7 +124,7 @@
 
 <!-- start section Skills -->
 <section class="skills">
-    <div class="container-fluid  home-cover">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12 cover-text">
                 <h1>Compétences</h1>
@@ -180,7 +179,7 @@
 
 <!-- start section Experiences -->
 <section class="experience">
-    <div class="container-fluid  home-cover">
+    <div class="container-fluid">
         <div class="container text-center">
             <div class="row">
                 <div class="col-sm-12 cover-text">
@@ -213,7 +212,7 @@
 
 <!-- start section Formation -->
 <section>
-    <div class="container-fluid  home-cover">
+    <div class="container-fluid  ">
         <div class="container text-center">
             <div class="row">
                 <div class="col-sm-12 cover-text">
@@ -223,12 +222,13 @@
         </div>
         <div class="row">
             <div class="col-lg-12">
-                <div class="timeline">
+                <div class="timeline" data-aos="fade-down-right">
                     <div class="timeline-entry">
                         <div class="timeline-title text-center">
                             <h3>Wild Code School</h3><br>
                             <h3>2018</h3>
-                            <a href="https://wildcodeschool.fr/"><img src="images/wcs_logo.png" alt="wcs_logo" class="w-50 mt-4"></a>
+                            <a href="https://wildcodeschool.fr/"><img src="images/wcs_logo.png" alt="wcs_logo"
+                                                                      class="w-50 mt-4"></a>
                         </div>
                         <div class="timeline-body">
                             <p>Formation Développement Web PHP / Symfony</p>
@@ -241,7 +241,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="timeline">
+                <div class="timeline" data-aos="fade-down-left">
                     <div class="timeline-entry">
                         <div class="timeline-title text-center">
                             <h3>ESDES - Ecole de management</h3><br>
@@ -259,7 +259,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="timeline">
+                <div class="timeline" data-aos="fade-down-right">
                     <div class="timeline-entry">
                         <div class="timeline-title text-center">
                             <h3>Université Claude Bernard Lyon 1</h3><br>
@@ -278,7 +278,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="timeline">
+                <div class="timeline" data-aos="fade-down-left">
                     <div class="timeline-entry">
                         <div class="timeline-title text-center">
                             <h3>Université Claude Bernard Lyon 1</h3><br>
@@ -305,8 +305,8 @@
 
 <!-- start section Autres expériences -->
 <section>
-    <div class="container-fluid  home-cover">
-        <div class="container-fluid  home-cover">
+    <div class="container-fluid  ">
+        <div class="container-fluid  ">
             <div class="container text-center">
                 <div class="row">
                     <div class="col-sm-12 cover-text">
@@ -343,23 +343,28 @@
 
 <!-- start section Loisirs -->
 <section>
-    <div class="container-fluid  home-cover text-center">
-        <div class="container-fluid  home-cover">
-            <div class="container text-center">
-                <div class="row">
-                    <div class="col-sm-12 cover-text">
-                        <h1>Loisirs</h1>
+    <div class="container-fluid">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-sm-12 cover-text">
+                    <h1>Loisirs</h1>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row" data-aos="fade-right">
+                    <div class="mx-auto">
+                        <i class="fas fa-film"></i>
+                        <p>Quentin Tarantino, Christopher Nolan, Alejandro Gonzalez Inarritu.</p></div>
+                </div>
+                <div class="row" data-aos="fade-left">
+                    <div class="mx-auto">
+                        <i class="fas fa-music"></i><p>Flûte traversière, guitare basse</p>
                     </div>
                 </div>
-                <div class="container">
-                    <div class="row mx-auto animated bounceInLeft">
-                        <p>Cinéma : Quentin Tarantino, Christopher Nolan, Alejandro Gonzalez Inarritu.</p>
-                    </div>
-                    <div class="row mx-auto animated bounceInRight">
-                        <p>Musique : Flûte traversière, guitare basse</p>
-                    </div>
-                    <div class="row mx-auto animated bounceInLeft">
-                        <p>Sports : Escalade, Soccer 5</p>
+                <div class="row" data-aos="fade-right">
+                    <div class="mx-auto">
+                        <i class="fas fa-futbol"></i>
+                        <p>Escalade, Soccer 5</p>
                     </div>
                 </div>
             </div>
@@ -368,7 +373,7 @@
 </section>
 
 <!-- Button Download resume -->
-<div class="container-fluid  home-cover">
+<div class="container-fluid  ">
     <div class="container">
         <div class="row">
             <div class="btn-cv mx-auto">
@@ -378,6 +383,7 @@
     </div>
 </div>
 
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
