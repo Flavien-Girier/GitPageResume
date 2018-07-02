@@ -8,6 +8,18 @@ body {
     font-style: italic;
 }
 
+hr{
+    border: 0;
+    background-image: linear-gradient(to right, rgba(172, 115, 57, 0), rgba(172, 115, 57, 0.8), rgba(172, 115, 57, 0));
+    height: 2px;
+    margin: 20px;
+    margin-bottom: 35px;
+}
+
+p{
+    color: black;
+}
+
 /* Header */
 .frame{
     width: 80%;
@@ -172,7 +184,6 @@ p {
 .btn-cv {
     text-align: center;
     width: 200px;
-    padding-top: 30px;
     margin: 30px;
 }
 
