@@ -20,6 +20,10 @@ p{
     color: black;
 }
 
+.stack{
+    font-style: italic;
+}
+
 /* Header */
 .frame{
     width: 80%;
