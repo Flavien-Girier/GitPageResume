@@ -440,6 +440,10 @@ i{
     #BC-Screenshot{
         display: none;
     }
+
+    .screenshot{
+        height: 50%;
+    }
 }
 
 
