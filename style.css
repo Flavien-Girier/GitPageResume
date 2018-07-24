@@ -412,6 +412,10 @@ i{
     height: auto;
 }
 
+.bc{
+    padding: 10px;
+}
+
 .carousel-control-next-icone:after
 {
     content: '>';
@@ -430,6 +434,7 @@ i{
     .img-responsive{
         display: none;
     }
+
 }
 
 @media screen and (max-width: 768px) { /* Carousel Display none for Mobile*/
@@ -443,6 +448,13 @@ i{
 
     .screenshot{
         height: 50%;
+    }
+
+    .logo{
+        display: none;
+    }
+    .timeline-title h3{
+        margin-left: -100px;
     }
 }
 
