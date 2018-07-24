@@ -404,9 +404,24 @@ i{
     margin: 5px;
 }
  .screenshot {
-     width: 750px;
+     width: 850px;
  }
 
+@media only screen and (min-width: 768px) {
+    .img-responsive-mobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #AMO-Screenshot {
+        display: none;
+    }
+
+    #BC-Screenshot {
+        display: none;
+    }
+}
 
 
 
