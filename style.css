@@ -434,6 +434,9 @@ i{
     .img-responsive{
         display: none;
     }
+    .formation-mobile{
+        display: none;
+    }
 
 }
 
@@ -455,6 +458,16 @@ i{
     }
     .timeline-title h3{
         margin-left: -100px;
+    }
+
+    .formation{
+        display: none;
+    }
+
+    .formation-mobile ul {
+        list-style:none;
+        margin-left:0;
+        padding-left:0;
     }
 }
 
